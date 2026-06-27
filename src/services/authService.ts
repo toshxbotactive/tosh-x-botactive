@@ -2,7 +2,7 @@ import { derivService } from './derivWebSocket';
 import { useAuthStore } from '../stores/authStore';
 import { ADMIN_ACCOUNT_IDS } from '../types';
 
-const APP_ID = '1089';
+const APP_ID = '33FyAVfAb5UdDeFEejgPD';
 const DERIV_WS_URL = `wss://ws.derivws.com/websockets/v3?app_id=${APP_ID}`;
 
 // Environment detection
