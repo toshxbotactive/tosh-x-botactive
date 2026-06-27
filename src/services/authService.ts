@@ -40,9 +40,11 @@ export const isProduction = (): boolean => {
 };
 
 export const generateOAuthURL = (): string => {
-  // Replace the dynamic path with your exact registered URL
+  // Use the exact base URL of your site hosted on GitHub Pages
   const redirectUrl = encodeURIComponent('https://toshxbotactive.github.io/tosh-x-botactive/');
-  return `https://app.deriv.com/oauth2/authorize?app_id=${APP_ID}&l=en&redirect_uri=${redirectUrl}`;
+  return `https://app.deriv.com/oauth2/authorize?app_id=33FyAVfAb5UdDeFEejgPD&l=en&redirect_uri=${redirectUrl}`;
+};
+
 };
 
 // Parse URL parameters for OAuth callback
