@@ -40,9 +40,8 @@ export const isProduction = (): boolean => {
 };
 
 export const generateOAuthURL = (): string => {
-  // Use the current origin and pathname for the redirect
-  const currentPath = window.location.pathname;
-  const redirectUrl = encodeURIComponent(window.location.origin + currentPath);
+  // Replace the dynamic path with your exact registered URL
+  const redirectUrl = encodeURIComponent('https://toshxbotactive.github.io/tosh-x-botactive/');
   return `https://app.deriv.com/oauth2/authorize?app_id=${APP_ID}&l=en&redirect_uri=${redirectUrl}`;
 };
 
